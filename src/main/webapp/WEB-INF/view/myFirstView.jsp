@@ -4,6 +4,8 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Salam World</h1>
+<br />
+    <a href="askDetails">Please write your details!</a>
+<br />
 </body>
 </html>

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
+@RequestMapping("/employee") // bu controllerin URL-nin önünde /employee yazilacaq
 public class MyController {
 
     @RequestMapping("/")
@@ -22,6 +23,14 @@ public class MyController {
         return "ask-emp-details-view";
     }
 
+    @RequestMapping("/showDetails")
+    public String showEmpDetails(@RequestParam("employeeName") String empName, Model model){
+        empName = "Mr. " + empName;
+        model.addAttribute("nameAttribute", empName);
+        model.addAttribute("description", "- is software engineer");
+
+
+
 //    @RequestMapping("/showDetails")
 //    public String showEmpDetails(){
 //        return "show-emp-details-view";
@@ -34,11 +43,7 @@ public class MyController {
 //
 //         model.addAttribute("description", "- is java developer"); // description - bu name attribute olacaq html de
 
-   @RequestMapping("/showDetails")
-    public String showEmpDetails(@RequestParam("employeeName") String empName, Model model){
-        empName = "Mr. " + empName;
-        model.addAttribute("nameAttribute", empName);
-        model.addAttribute("description", "- is software engineer");
+
 
 
 

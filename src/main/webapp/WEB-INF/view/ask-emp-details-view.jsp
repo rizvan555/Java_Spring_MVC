@@ -12,6 +12,7 @@
 </head>
 <body>
     <h1>Dear employee, please enter your details!</h1>
+
     <form action="showDetails" method="get">
         <input type="text" name="employeeName" value="" placeholder="Enter your name">
         <button type="submit">Submit</button>

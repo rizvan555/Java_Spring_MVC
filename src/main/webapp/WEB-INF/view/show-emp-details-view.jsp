@@ -14,7 +14,7 @@
     <h1>Show Details</h1>
     <br />
     <br />
-    Your message: Hello ${param.employeeName}!
+    Your message:  ${nameAttribute} ${description}!
     <br />
     <br />
     <button onclick="window.location.href='http://localhost:8080/spring_course_mvc/askDetails'">Back</button>
